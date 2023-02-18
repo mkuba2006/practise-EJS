@@ -1,11 +1,26 @@
 {
   "name": "ejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# practise-EJS\"",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jakub Myrta",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuba2006/practise-EJS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkuba2006/practise-EJS/issues"
+  },
+  "homepage": "https://github.com/mkuba2006/practise-EJS#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "parser": "^0.1.4"
+  }
 }
