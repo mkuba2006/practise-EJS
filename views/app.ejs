@@ -5,8 +5,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, today it's <%= kind %></h1>
+    <h1><%= kind %></h1>
+    <ul> 
+         <% for(let i = 0; i<list.length ; i++){ %>
+            <li><%= list[i] %></li>
+         <% } %>
+    </ul>
 
+    <form action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit" name="button">add</button>
+    </form>
 
 </body>
 </html>
