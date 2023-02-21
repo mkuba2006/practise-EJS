@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
 let items = ['papryka', 'zioło', 'ziemniaki'];
-
+let workitems = [];
 app.get('/', function(req, res){
     const today = new Date()
     const cd = {
@@ -26,7 +26,9 @@ app.post('/', function(req, res){
     res.redirect('/');
 })
 
-
+app.get('/work',function(req,res){
+    res.render('app', {kind: 'work list', list: workitems});
+})
 
 
 
