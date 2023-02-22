@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><%= kind %></h1>
+    <h1><%= day %></h1>
     <ul> 
          <% for(let i = 0; i<list.length ; i++){ %>
             <li><%= list[i] %></li>
@@ -13,8 +13,8 @@
     </ul>
 
     <form action="/" method="post">
-        <input type="text" name="newItem">
-        <button type="submit" name="button">add</button>
+        <input type="text" name="newItem" autocomplete="off">
+        <button type="submit" name="list" value=<%= day %>>add</button>
     </form>
 
 </body>
